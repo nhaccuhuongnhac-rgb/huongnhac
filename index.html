@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Trung Tâm Âm Nhạc & Nhạc Cụ Hướng Nhạc</title>
+  <meta name="description" content="Cung cấp nhạc cụ, đào tạo thanh nhạc – piano – guitar, trống, bass, organ, nhạc công, luyện thi đại học, thu âm & biểu diễn…">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="logo.png" alt="Logo Hướng Nhạc" class="logo">
+        <div>
+          <h1>Trung Tâm Âm Nhạc & Nhạc Cụ Hướng Nhạc</h1>
+          <p class="tagline">Cung cấp nhạc cụ, đào tạo thanh nhạc – piano – guitar, trống, bass, organ, nhạc công, luyện thi đại học, thu âm & biểu diễn…</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="#home">Trang chủ</a>
+        <a href="#products">Sản phẩm</a>
+        <a href="#classes">Lớp học</a>
+        <a href="#about">Giới thiệu</a>
+        <a href="#contact">Liên hệ</a>
+        <button id="cartBtn" class="cart-btn">Giỏ hàng (<span id="cartCount">0</span>)</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div>
+          <h2>Nhạc cụ chất lượng — Giá cạnh tranh</h2>
+          <p>Mua guitar, piano, organ, micro, amp và phụ kiện. Miễn phí tư vấn, có chính sách bảo hành và lớp dạy chuyên nghiệp.</p>
+          <a href="#products" class="btn">Xem sản phẩm</a>
+        </div>
+        <div class="hero-image">
+          <img src="https://placehold.co/600x400?text=Nhạc+cụ+Hướng+Nhạc" alt="Nhạc cụ">
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="products container">
+      <h2>Sản phẩm theo danh mục</h2>
+      <div class="category-list">
+        <button class="cat-btn" data-cat="all">Tất cả</button>
+        <button class="cat-btn" data-cat="Piano">🎹 Piano & Keyboard</button>
+        <button class="cat-btn" data-cat="Guitar">🎸 Guitar & Ukulele</button>
+        <button class="cat-btn" data-cat="Drums">🥁 Trống & Bộ gõ</button>
+        <button class="cat-btn" data-cat="Audio">🎤 Micro & Thiết bị âm thanh</button>
+        <button class="cat-btn" data-cat="Accessory">🎶 Phụ kiện nhạc cụ</button>
+        <button class="cat-btn" data-cat="Classes">🎓 Lớp học</button>
+      </div>
+      <div id="productGrid" class="product-grid"></div>
+    </section>
+
+    <section id="classes" class="about container">
+      <h2>Lớp học</h2>
+      <p>Chúng tôi đào tạo: Thanh nhạc, Piano, Guitar, Trống, Bass, Organ, Luyện thi đại học ngành âm nhạc và thu âm. Giáo viên kinh nghiệm, lộ trình rõ ràng.</p>
+      <a class="btn" href="#contact">Đăng ký ngay</a>
+    </section>
+
+    <section id="about" class="about container">
+      <h2>Về chúng tôi</h2>
+      <p>Trung Tâm Âm Nhạc Hướng Nhạc — Pleiku, Gia Lai. Tuyển sinh dạy nhạc, sửa chữa và cung cấp nhạc cụ. Địa chỉ: 33B Lê Thị Riêng - TP. Pleiku - Gia Lai</p>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Liên hệ</h2>
+      <div class="contact-grid">
+        <div>
+          <p><strong>Địa chỉ:</strong> 33B Lê Thị Riêng, Pleiku, Gia Lai</p>
+          <p><strong>Hotline:</strong> <a href="tel:+84972526579">+84 972 526 579</a></p>
+          <p><strong>Facebook:</strong> <a href="https://www.facebook.com/share/1GetgZuqWN/?mibextid=wwXIfr" target="_blank">Fanpage / Messenger</a></p>
+          <p><strong>Zalo:</strong> <a href="https://zalo.me/0972526579" target="_blank">Chat Zalo</a></p>
+          <div class="map-placeholder">
+            <img src="https://placehold.co/600x300?text=Bản+đồ" alt="Bản đồ">
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+          <label>Họ tên
+            <input type="text" name="name" required>
+          </label>
+          <label>Email
+            <input type="email" name="email" required>
+          </label>
+          <label>Nội dung
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button type="submit" class="btn">Gửi liên hệ</button>
+          <p class="small">* Mẫu demo — sẽ mở mail của bạn để gửi.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <aside id="cartSidebar" class="cart-sidebar" aria-hidden="true">
+    <div class="cart-head">
+      <h3>Giỏ hàng</h3>
+      <button id="closeCart" class="close-cart">&times;</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-summary">
+        <span>Tổng:</span>
+        <strong id="cartTotal">0₫</strong>
+      </div>
+      <button id="checkoutBtn" class="btn full">Thanh toán</button>
+    </div>
+  </aside>
+
+  <div id="checkoutModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close-modal" id="closeCheckout">&times;</button>
+      <h3>Thanh toán</h3>
+      <form id="checkoutForm">
+        <label>Họ tên
+          <input type="text" name="fullname" required>
+        </label>
+        <label>Địa chỉ giao hàng
+          <input type="text" name="address" required>
+        </label>
+        <label>Số điện thoại
+          <input type="tel" name="phone" required>
+        </label>
+        <button type="submit" class="btn full">Xác nhận đơn hàng</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Trung Tâm Âm Nhạc & Nhạc Cụ Hướng Nhạc — Pleiku.</p>
+    </div>
+  </footer>
+
+  <!-- Floating contact buttons -->
+  <div class="floating-contact">
+    <a class="fc-btn" href="https://zalo.me/0972526579" target="_blank" title="Chat Zalo">
+      💬 Zalo
+    </a>
+    <a class="fc-btn" href="https://www.facebook.com/share/1GetgZuqWN/?mibextid=wwXIfr" target="_blank" title="Facebook">
+      📘 Facebook
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

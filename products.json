@@ -1,0 +1,56 @@
+[
+  {
+    "id": "piano-001",
+    "name": "Yamaha CLP330 (Piano Điện)",
+    "price": 35000000,
+    "img": "https://placehold.co/600x400?text=Yamaha+CLP330",
+    "stock": 2,
+    "category": "Piano",
+    "desc": "Piano điện cho gia đình, phòng thu."
+  },
+  {
+    "id": "guitar-001",
+    "name": "Guitar Acoustic MORIS W80",
+    "price": 4500000,
+    "img": "https://placehold.co/600x400?text=Guitar+Moris+W80",
+    "stock": 5,
+    "category": "Guitar",
+    "desc": "Guitar cao cấp, phù hợp học & biểu diễn."
+  },
+  {
+    "id": "drum-001",
+    "name": "Trống điện Roland TD-1",
+    "price": 12000000,
+    "img": "https://placehold.co/600x400?text=Roland+TD-1",
+    "stock": 3,
+    "category": "Drums",
+    "desc": "Bộ trống điện compact, phù hợp học tập."
+  },
+  {
+    "id": "mic-001",
+    "name": "Micro Shure SM58",
+    "price": 2200000,
+    "img": "https://placehold.co/600x400?text=Shure+SM58",
+    "stock": 10,
+    "category": "Audio",
+    "desc": "Micro hát live chuyên nghiệp."
+  },
+  {
+    "id": "acc-001",
+    "name": "Dây đàn Guitar, Phím & Phụ kiện",
+    "price": 150000,
+    "img": "https://placehold.co/600x400?text=Phu+kien",
+    "stock": 50,
+    "category": "Accessory",
+    "desc": "Phụ kiện đa dạng cho mọi nhạc cụ."
+  },
+  {
+    "id": "class-001",
+    "name": "Khóa học Piano cơ bản (12 buổi)",
+    "price": 2000000,
+    "img": "https://placehold.co/600x400?text=Lop+Piano",
+    "stock": 999,
+    "category": "Classes",
+    "desc": "Lộ trình cơ bản cho người mới bắt đầu."
+  }
+]
